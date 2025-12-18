@@ -1,6 +1,10 @@
-arr = [3.5, -2.1, 0, 4.2, -5.5, 6.0]
-a = 2
-b = 5
+n = int(input("Введіть кількість елементів масиву: "))
+arr = []
+for i in range(n):
+    arr.append(float(input(f"Введіть елемент {i+1}: ")))
+
+a = float(input("Введіть значення a: "))
+b = float(input("Введіть значення b: "))
 
 max_el = arr[0]
 for x in arr:
@@ -24,7 +28,6 @@ for x in arr:
 while len(new_arr) < len(arr):
     new_arr.append(0)
 
-print("Масив:", arr)
 print("Максимальний елемент:", max_el)
 print("Сума до останнього додатного:", sum_before_last)
 print("Стиснутий масив:", new_arr)
