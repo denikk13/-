@@ -19,11 +19,15 @@ def compress_array(arr, a, b):
         new_arr.append(0)
     return new_arr
 
-arr = [3.5, -2.1, 0, 4.2, -5.5, 6.0]
-a = 2
-b = 5
+n = int(input("Введіть кількість елементів масиву: "))
+arr = []
+for i in range(n):
+    arr.append(float(input(f"Введіть елемент {i+1}: ")))
 
-print("Масив:", arr)
+a = float(input("Введіть значення a: "))
+b = float(input("Введіть значення b: "))
+
 print("Максимальний елемент:", max_element(arr))
 print("Сума до останнього додатного:", sum_before_last_positive(arr))
 print("Стиснутий масив:", compress_array(arr, a, b))
+
